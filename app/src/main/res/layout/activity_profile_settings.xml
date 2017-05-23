@@ -1,0 +1,264 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#E6E6E0">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="flyapp.its_on.ActivityProfileSettings">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:background="#ffffff">
+
+            <TextView
+                android:text="Profile Settings"
+                android:textColor="#4fa5d5"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"/>
+
+            <View style="@style/DividerHorizontalThin"
+                android:layout_alignBottom="@+id/tv_headerActive"
+                android:layout_marginBottom="10dp"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:text="Username"
+                    android:textColor="#4fa5d5"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/et_username"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:textSize="18sp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="hdawg"
+                    android:background="@drawable/setting_edittext_border"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:text="Password"
+                    android:textColor="#4fa5d5"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/et_password"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:textSize="18sp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:typeface="monospace"
+                    android:inputType="textPassword"
+                    android:password="true"
+                    android:background="@drawable/setting_edittext_border"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:text="Full Name"
+                    android:textColor="#4fa5d5"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/et_fullName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:textSize="18sp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="Henry Liu"
+                    android:background="@drawable/setting_edittext_border"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:text="Email Address"
+                    android:textColor="#4fa5d5"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/et_emailAddress"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:textSize="18sp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="mistah.yelloh@gmail.com"
+                    android:background="@drawable/setting_edittext_border"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:background="#ffffff">
+
+            <TextView
+                android:id="@+id/tv_profileSettingDpChangeTitle"
+                android:text="Display Picture"
+                android:textColor="#4fa5d5"
+                android:textSize="16sp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Take new Display Picture"
+                android:textColor="#D4D4D4"
+                android:textStyle="italic"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_profileSettingDpChangeTitle"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/iv_dp"
+
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/img_hdawgdp"
+                android:clickable="true"
+                android:onClick="takePhoto"
+                app:border_width="3dp"
+                app:border_color="#4fa5d5"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:background="#ffffff">
+
+            <ImageView android:id="@+id/iv_cover"
+                android:layout_width="90dp"
+                android:layout_height="75dp"
+                android:scaleType="centerCrop"
+                android:clickable="true"
+                android:onClick="changeCoverPhoto"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/img_hdawgcover" />
+
+            <TextView
+                android:id="@+id/tv_profileSettinCoverChange"
+                android:text="Cover Image"
+                android:textColor="#4fa5d5"
+                android:textSize="16sp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Upload new cover"
+                android:textColor="#D4D4D4"
+                android:textStyle="italic"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_profileSettinCoverChange"/>
+
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:background="#5CE62E"
+            android:onClick="updateUserProfile"
+            android:textStyle="bold"
+            android:text="Save Settings"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ffffff"
+            />
+
+    </LinearLayout>
+
+</ScrollView>

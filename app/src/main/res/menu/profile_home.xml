@@ -1,0 +1,36 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ProfileHome" >
+
+    <!-- Location Found -->
+    <item android:id="@+id/action_addchallenge"
+        android:icon="@drawable/ic_add_old"
+        android:title="add_challenge"
+        android:showAsAction="always" />
+
+    <item android:id="@+id/action_addFriend"
+        android:title="@string/add_friend"
+        android:icon="@drawable/ic_friend"
+        android:showAsAction="always" />
+
+    <item android:id="@+id/action_seeRequests"
+        android:title="@string/check_request"
+        android:icon="@drawable/ic_lightbulb"
+        android:showAsAction="always" />
+
+    <item android:id="@+id/action_profile_settings"
+        android:title="Settings"
+        android:orderInCategory="1"
+        android:showAsAction="never" />
+
+    <item android:id="@+id/action_archived"
+        android:title="Archive"
+        android:orderInCategory="2"
+        android:showAsAction="never" />
+
+    <item android:id="@+id/action_logout"
+        android:title="@string/log_out"
+        android:orderInCategory="3"
+        android:showAsAction="never" />
+
+</menu>

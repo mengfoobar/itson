@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp">
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="#ffffff">
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:text="Hdawg"
+            android:textColor="#4fa5d5"
+            android:textSize="16sp"
+            android:layout_toRightOf="@+id/iv_dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:text="2014-08-19"
+            android:textColor="#D4D4D4"
+            android:layout_marginRight="10dp"
+            android:textStyle="italic"
+            android:textSize="16sp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_username"/>
+
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="5dp"
+            android:text="I am going to try my best to do this lalala"
+            android:textColor="#7C7C7A"
+            android:textStyle="italic"
+            android:textSize="16sp"
+            android:layout_toRightOf="@+id/iv_dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_date"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/iv_dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/img_hdawgdp"
+            android:clickable="true"
+            android:onClick="takePhoto"
+            app:border_width="3dp"
+            app:border_color="#4fa5d5"/>
+
+    </RelativeLayout>
+</LinearLayout>

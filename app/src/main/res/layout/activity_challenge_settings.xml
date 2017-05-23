@@ -1,0 +1,335 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:background="#E6E6E0">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="flyapp.its_on.ActivityChallengeSettings">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="#ffffff">
+
+        <TextView
+            android:text="Goal Settings"
+            android:textColor="#4fa5d5"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"/>
+
+        <View style="@style/DividerHorizontalThin"
+            android:layout_marginBottom="10dp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:text="Challenge Name"
+                android:textColor="#4fa5d5"
+                android:textSize="16sp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/et_newChlgName"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:textSize="18sp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:background="@drawable/setting_edittext_border"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:text="Goal Description"
+                android:textColor="#4fa5d5"
+                android:textSize="16sp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/et_newChlgDesc"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:textSize="18sp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:inputType="textMultiLine"
+                android:background="@drawable/setting_edittext_border"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:text="Category"
+                android:textColor="#4fa5d5"
+                android:textSize="16sp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/et_newChlgCgry"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:textSize="18sp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:clickable="true"
+                android:onClick="RetrieveCategory"
+                android:focusable="false"
+                android:background="@drawable/setting_edittext_border"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:text="Start Date"
+                android:textColor="#4fa5d5"
+                android:textSize="16sp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/et_newChlgStartDate"
+                android:editable="false"
+                android:onClick="RetrieveStartDate"
+                android:focusable="false"
+                android:inputType="date"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:textSize="18sp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:background="@drawable/setting_edittext_border"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:text="End Date"
+                android:textColor="#4fa5d5"
+                android:textSize="16sp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/et_newChlgEndDate"
+                android:editable="false"
+                android:onClick="RetrieveEndDate"
+                android:focusable="false"
+                android:inputType="date"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:textSize="18sp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:background="@drawable/setting_edittext_border"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="7dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="#ffffff">
+
+        <TextView
+            android:text="Format"
+            android:textColor="#4fa5d5"
+            android:textSize="16sp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioGroup
+            android:id="@+id/rg_format"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:onClick="setFormat"
+            android:checkedButton="@+id/rb_daily">
+
+            <RadioButton
+                android:id="@+id/rb_daily"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#4fa5d5"
+                android:textStyle="italic"
+                android:text="Daily"
+                android:onClick="setFormatDaily"/>
+
+            <RadioButton
+                android:id="@+id/rb_weekly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="#4fa5d5"
+                android:textStyle="italic"
+                android:onClick="setFormatWeekly"
+                android:text="Weekly" />
+        </RadioGroup>
+
+
+
+        <LinearLayout
+            android:id="@+id/layout_weekdays"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:layout_marginTop="5dp">
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="M"
+                android:textStyle="italic"
+                android:textColor="#4fa5d5"
+                android:id="@+id/cb_monday"
+                android:checked="false"
+                android:layout_gravity="center_horizontal" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="T"
+                android:textStyle="italic"
+                android:textColor="#4fa5d5"
+                android:id="@+id/cb_tuesday"
+                android:checked="false"
+                android:layout_gravity="center_horizontal" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="W"
+                android:textStyle="italic"
+                android:textColor="#4fa5d5"
+                android:id="@+id/cb_wednesday"
+                android:checked="false"
+                android:layout_gravity="center_horizontal" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Th"
+                android:textStyle="italic"
+                android:textColor="#4fa5d5"
+                android:id="@+id/cb_thursday"
+                android:checked="false"
+                android:layout_gravity="center_horizontal" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="F"
+                android:textStyle="italic"
+                android:textColor="#4fa5d5"
+                android:id="@+id/cb_friday"
+                android:checked="false"
+                android:layout_gravity="center_horizontal" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sa"
+                android:textStyle="italic"
+                android:textColor="#4fa5d5"
+                android:id="@+id/cb_saturday"
+                android:checked="false"
+                android:layout_gravity="center_horizontal" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Su"
+                android:textStyle="italic"
+                android:textColor="#4fa5d5"
+                android:checked="false"
+                android:id="@+id/cb_sunday"
+                android:layout_gravity="center_horizontal" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_commit"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#4fa5d5"
+        android:textColor="#ffffff"
+        android:text="Update"
+        android:onClick="updateGoal"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_gravity="center_horizontal"/>
+</LinearLayout>
+</ScrollView>

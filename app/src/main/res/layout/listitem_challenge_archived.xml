@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_archivedChallengeName"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#4fa5d5"
+            android:text="Running Challenge"/>
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_archivedChallengeDescription"
+            android:text="Run once a day everyday"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            android:textColor="#CACABC"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ended on: "
+                android:textColor="#4fa5d5"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_archivedChallengeEndDate"
+                android:textColor="#4fa5d5"
+                android:text="2014-08-12"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+        <!--
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Champions: "
+                android:textColor="#4fa5d5"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_archivedChallengeUsers"
+                android:textColor="#4fa5d5"
+                android:text="hdawg, henry"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+        -->
+
+    </LinearLayout>
+</RelativeLayout>

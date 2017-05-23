@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="flyapp.its_on.ActivityFriendsPage" >
+
+    <item android:id="@+id/action_addfriend"
+        android:icon="@drawable/ic_add"
+        android:title="add_friend"
+        android:showAsAction="always" />
+
+    <item android:id="@+id/action_friendrequest"
+        android:icon="@drawable/ic_friendrequest"
+        android:title="fill_friendrequest"
+        android:showAsAction="always" />
+</menu>

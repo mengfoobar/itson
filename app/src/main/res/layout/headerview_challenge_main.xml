@@ -1,0 +1,92 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#D4D4D4"
+    android:orientation="vertical">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_profile"
+        android:orientation="vertical">
+
+        <ImageView android:id="@+id/iv_cover"
+            android:layout_width="fill_parent"
+            android:layout_height="140dp"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_cover"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_dpChlgName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="22dp"
+                android:textColor="#ffffff"
+                android:paddingBottom="5dp"
+                android:paddingTop="20dp"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/tv_dpChlgDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:textColor="#ffffff"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="130dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current Progress"
+            android:layout_gravity="center"
+            android:textSize="16dp"
+            android:textColor="#4fa5d5"
+            android:textStyle="bold"
+            android:layout_marginTop="7dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            />
+
+        <View style="@style/DividerHor"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"/>
+
+        <org.lucasr.twowayview.TwoWayView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/twv_dateDisp"
+            style="@style/TwoWayView"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:drawSelectorOnTop="false"
+            tools:context=".ChallengeMainPage" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

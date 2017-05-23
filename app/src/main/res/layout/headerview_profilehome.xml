@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#D4D4D4">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="140dp"
+        >
+
+        <ImageView android:id="@+id/iv_cover"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="centerCrop"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/img_hdawgcover"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/iv_dp"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/ic_launcher"
+            app:border_width="3dp"
+            app:border_color="#FFFFFF"/>
+
+        <TextView
+            android:id="@+id/tv_dpusername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/iv_dp"
+            android:text="Henry"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="5dp"
+            />
+
+
+    </RelativeLayout>
+</LinearLayout>

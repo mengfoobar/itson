@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:layout_height="match_parent"
+    android:layout_width="300dp"
+    android:weightSum="1">
+
+    <TextView
+        android:text="Weekday"
+        android:textColor="#4fa5d5"
+        android:textSize="16sp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn="MON"
+            android:textOff="MON"
+            android:id="@+id/toggleButton" />
+
+        <ToggleButton
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:textOn="TUE"
+            android:textOff="TUE"
+            android:id="@+id/toggleButton2" />
+
+        <ToggleButton
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:textOn="WED"
+            android:textOff="WED"
+            android:text="New ToggleButton"
+            android:id="@+id/toggleButton3" />
+
+        <ToggleButton
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:textOn="THU"
+            android:textOff="THU"
+            android:id="@+id/toggleButton4" />
+
+        <ToggleButton
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:textOn="FRI"
+            android:textOff="FRI"
+            android:id="@+id/toggleButton5" />
+    </LinearLayout>
+
+    <TextView
+        android:text="Weekend"
+        android:textColor="#4fa5d5"
+        android:textSize="16sp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ToggleButton
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15"
+            android:textOn="SAT"
+            android:textOff="SAT"
+            android:id="@+id/toggleButton6" />
+
+        <ToggleButton
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15"
+            android:textOn="SUN"
+            android:textOff="SUN"
+            android:id="@+id/toggleButton7" />
+        </LinearLayout>
+
+</LinearLayout>

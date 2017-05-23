@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="flyapp.its_on" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- GCM requires a Google account. -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <!-- Keeps the processor from sleeping when a message is received. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- Creates a custom permission so only this app can receive its messages. -->
+    <permission
+        android:name="flyapp.its_on.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="flyapp.its_on.permission.C2D_MESSAGE" />
+    <!-- This app has permission to register and receive data message. -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+
+
+    <!-- Network State Permissions to detect Internet status -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- Permission to vibrate -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_itson"
+        android:label="IT&apos;S ON"
+        android:theme="@style/AppTheme" >
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".ActivityStartScreen"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ActivityProfileHome"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ActivityChallengeMainPage"
+            android:label=""
+            android:noHistory="true" >
+        </activity>
+        <activity
+            android:name=".ActivityNewChallenge"
+            android:label=""
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ActivityRegistration"
+            android:label=""
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ActivitySignInScreen"
+            android:label=""
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ActivityFriendsPage"
+            android:label=""
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ActivityFriendRequest"
+            android:label=""
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ActivityChallengeRequests"
+            android:label=""
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ActivityArchive"
+            android:label=""
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <service android:name=".HttpCallIntentService" />
+
+        <activity
+            android:name=".ActivityProfileSettings"
+            android:label="@string/title_activity_profile_settings" >
+        </activity>
+        <activity
+            android:name=".ActivityChallengeSettings"
+            android:label="@string/title_activity_activity_challenge_settings" >
+        </activity>
+
+        <receiver
+            android:name=".GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+
+                <!-- Receives the actual messages. -->
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <!-- Receives the registration id. -->
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="flyapp.its_on" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".TestActivity"
+            android:label="@string/title_activity_test" >
+
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:label="@string/title_activity_register" >
+
+        </activity>
+
+        <service android:name=".GCMIntentService" />
+    </application>
+
+</manifest>
